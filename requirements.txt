@@ -1,0 +1,6 @@
+flask
+flask-cors
+selenium
+openai
+python-dotenv
+requests

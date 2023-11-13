@@ -38,7 +38,7 @@ const AnalysisSection = () => {
           email: string;
         };
       } = await axios.post(
-        "http://localhost:5000/accessibility-analysis",
+        "/api/accessibility-analysis",
         {
           image_analysis: visualAnalysis,
           description: description,

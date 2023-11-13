@@ -44,7 +44,7 @@ const PropertySection = () => {
           }[];
         };
       } = await axios.post(
-        "http://localhost:5000/analyze-images",
+        "/api/analyze-images",
         {
           image_urls: imageUrls,
         },
