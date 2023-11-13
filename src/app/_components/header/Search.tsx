@@ -22,7 +22,7 @@ const Search = () => {
       // look for description and image urls in the backend
       const data: { data: { description: string; image_urls: string[] } } =
         await axios.post(
-          "/api/scrape",
+          process.env.NEXT_PUBLIC_BACKEND_BASE_URL + "/api/scrape",
           {
             property_url: url,
           },

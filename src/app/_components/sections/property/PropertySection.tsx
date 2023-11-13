@@ -44,7 +44,7 @@ const PropertySection = () => {
           }[];
         };
       } = await axios.post(
-        "/api/analyze-images",
+        process.env.NEXT_PUBLIC_BACKEND_BASE_URL + "/api/analyze-images",
         {
           image_urls: imageUrls,
         },

@@ -38,7 +38,8 @@ const AnalysisSection = () => {
           email: string;
         };
       } = await axios.post(
-        "/api/accessibility-analysis",
+        process.env.NEXT_PUBLIC_BACKEND_BASE_URL +
+          "/api/accessibility-analysis",
         {
           image_analysis: visualAnalysis,
           description: description,
