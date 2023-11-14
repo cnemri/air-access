@@ -1,5 +1,6 @@
 import { atom } from "jotai";
 
+export const urlAtom = atom("");
 export const descriptionAtom = atom("");
 export const imageUrlsAtom = atom<string[]>([]);
 export const visualAnalysisAtom = atom({});

@@ -8,9 +8,11 @@ import {
   finalReportAtom,
   imageUrlsAtom,
   visualAnalysisAtom,
+  urlAtom,
 } from "~/lib/state";
 
 const Logo = () => {
+  const [, setUrl] = useAtom(urlAtom);
   const [, setDescription] = useAtom(descriptionAtom);
   const [, setImageUrls] = useAtom(imageUrlsAtom);
   const [, setVisualAnalysis] = useAtom(visualAnalysisAtom);
@@ -19,6 +21,7 @@ const Logo = () => {
     <div className="flex basis-1/4 items-center justify-center">
       <div
         onClick={() => {
+          setUrl("");
           setDescription("");
           setImageUrls([]);
           setVisualAnalysis({});

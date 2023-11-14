@@ -6,10 +6,11 @@ import {
   descriptionAtom,
   imageUrlsAtom,
   isLoadingPropertyAtom,
+  urlAtom,
 } from "~/lib/state";
 
 const Search = () => {
-  const [url, setUrl] = React.useState("");
+  const [url, setUrl] = useAtom(urlAtom);
   const [, setDescription] = useAtom(descriptionAtom);
   const [, setImageUrls] = useAtom(imageUrlsAtom);
   const [, setIsLoading] = useAtom(isLoadingPropertyAtom);
